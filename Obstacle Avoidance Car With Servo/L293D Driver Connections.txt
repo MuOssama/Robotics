@@ -1,0 +1,46 @@
+Components Required:
+1. Arduino Uno (or compatible microcontroller)
+2. L293D Motor Driver IC
+3. Ultrasonic Sensor (HC-SR04)
+4. 2 DC Motors
+5. Power Supply (battery or USB power)
+6. Jumper Wires
+
+Pin Connections:
+
+1. L293D Motor Driver IC to Arduino:
+   - Pin 1 (Enable 1,2): Connect to 5V on Arduino (or PWM pin for speed control)
+   - Pin 2 (Input 1 for Motor A): Connect to Pin 8 on Arduino
+   - Pin 7 (Input 2 for Motor A): Connect to Pin 7 on Arduino
+   - Pin 9 (Enable 3,4): Connect to 5V on Arduino (or PWM pin for speed control)
+   - Pin 10 (Input 3 for Motor B): Connect to Pin 5 on Arduino
+   - Pin 15 (Input 4 for Motor B): Connect to Pin 6 on Arduino
+   - Pin 4, 5, 12, 13 (Ground): Connect to GND on Arduino
+   - Pin 16 (Vcc): Connect to 5V on Arduino
+   - Pin 8 (Motor Power Supply): Connect to external power supply (e.g., 6V-12V battery)
+
+2. Motors to L293D Motor Driver IC:
+   - Motor A:
+     - Connect one motor wire to Pin 3 (Output 1)
+     - Connect the other motor wire to Pin 6 (Output 2)
+   - Motor B:
+     - Connect one motor wire to Pin 11 (Output 3)
+     - Connect the other motor wire to Pin 14 (Output 4)
+
+3. Ultrasonic Sensor (HC-SR04) to Arduino:
+   - Trig Pin: Connect to Pin 13 on Arduino
+   - Echo Pin: Connect to Pin 12 on Arduino
+   - VCC: Connect to 5V on Arduino
+   - GND: Connect to GND on Arduino
+
+4- Servo
+   - VCC: Connect to 5V on Arduino
+   - GND: Connect to GND on Arduino
+   - SIGNAL Pin: Pin 9 on Arduino
+
+
+5. Power Connections:
+   - Arduino: Power via USB or external power supply.
+   - L293D Motor Driver IC:
+     - Pin 8 (Motor Power Supply): Connect to external battery (6V-12V)
+     - Pin 16 (Vcc): Connect to 5V from Arduino
