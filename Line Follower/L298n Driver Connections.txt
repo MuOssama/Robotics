@@ -25,9 +25,17 @@ Pin Connections:
      - Connect one motor wire to OUT3
      - Connect the other motor wire to OUT4
 
-3. Ultrasonic Sensor (HC-SR04) to Arduino:
-   - Trig Pin: Connect to Pin 13 on Arduino
-   - Echo Pin: Connect to Pin 12 on Arduino
+3. IR Sensor  to Arduino:
+  left IR sensor of the 3 IR sensors:
+   - Signal Pin: Connect to Pin A0 on Arduino
+   - VCC: Connect to 5V on Arduino
+   - GND: Connect to GND on Arduino
+  middle IR sensor of the 3 IR sensors:
+   - Signal Pin: Connect to Pin A1 on Arduino
+   - VCC: Connect to 5V on Arduino
+   - GND: Connect to GND on Arduino
+  right IR sensor of the 3 IR sensors:
+   - Signal Pin: Connect to Pin A2 on Arduino
    - VCC: Connect to 5V on Arduino
    - GND: Connect to GND on Arduino
 
