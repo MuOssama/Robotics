@@ -33,7 +33,11 @@ Pin Connections:
    - VCC: Connect to 5V on Arduino
    - GND: Connect to GND on Arduino
   middle IR sensor of the 3 IR sensors:
-   - Signal Pin: Connect to Pin A0 on Arduino
+   - Signal Pin: Connect to Pin A1 on Arduino
+   - VCC: Connect to 5V on Arduino
+   - GND: Connect to GND on Arduino
+  right IR sensor of the 3 IR sensors:
+   - Signal Pin: Connect to Pin A2 on Arduino
    - VCC: Connect to 5V on Arduino
    - GND: Connect to GND on Arduino
 4. Power Connections:
