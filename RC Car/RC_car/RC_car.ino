@@ -12,6 +12,7 @@
 #define Aux1 12
 #define Aux2 13
 
+#define steerTime 200
 // Variables for light and buzzer state
 bool lightState = false;
 bool buzzerState = false;
@@ -46,6 +47,8 @@ void moveRight(int speed) {
   digitalWrite(in2, LOW);
   digitalWrite(in3, LOW);
   digitalWrite(in4, HIGH);
+  delay(steerTime);
+  stopCar();
 }
 
 // Function to move the car left
@@ -56,6 +59,8 @@ void moveLeft(int speed) {
   digitalWrite(in2, HIGH);
   digitalWrite(in3, HIGH);
   digitalWrite(in4, LOW);
+  delay(steerTime);
+  stopCar();
 }
 
 // Function to stop the car
